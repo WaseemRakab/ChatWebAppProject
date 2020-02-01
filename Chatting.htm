@@ -1,0 +1,30 @@
+<!--Waseem Rkab And Hisham Mansour-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Conversation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!--Google Font-->
+</head>
+
+<body>
+    <h1>Chat Web Page</h1>
+    <h4>
+        Chatting With:
+        <?= $senderName['FirstName'].' '. $senderName['LastName']; ?>
+    </h4>
+    <form action="HomePage.php" method="POST">
+        <input class="logout" type="submit" value="End Chat Session" name="exit">
+    </form>
+    <form method="POST" class="chat">
+        <input class="chat" type="text" placeholder="Type Your Message" name="message" required>
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+
+</html>

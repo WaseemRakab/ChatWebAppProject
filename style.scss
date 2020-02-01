@@ -1,0 +1,85 @@
+/*Waseem Rkab And Hisham Mansour*/
+
+body {
+    // the style of body , whole page
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    // styling the buttons on the forms
+    outline: none;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+}
+
+input[type="submit"] {
+    // submit type button style different
+    padding: 10px;
+    color: #fff;
+    background: #0098cb;
+    width: 320px;
+    margin: 20px auto;
+    margin-top: 0px;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #00b8eb;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+input[type="submit"].logout,
+div.logout {
+    //for showing a message at left side
+    margin-left: 70%;
+}
+
+#sel {
+    font-size: 25px;
+    color: white;
+    background-color: #0098cb;
+}
+
+div.style {
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 68%;
+}
+
+div.me {
+    position: fixed;
+    right: 15%;
+    text-align: right;
+    font-size: 12px;
+    color: #0098cb;
+}
+
+div.from {
+    position: fixed;
+    left: 15%;
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+}
+
+input[type="text"].chat {
+    //for chat conversation
+    width: 70%;
+}

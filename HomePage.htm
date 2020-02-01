@@ -1,0 +1,42 @@
+<!--Waseem Rkab And Hisham Mansour-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!--Google Font-->
+</head>
+
+<body>
+    <h1>Home Page</h1>
+    <h3>Which one to chat?</h3>
+    <div class="logout">
+        User Name:
+        <?=$currName?>
+    </div>
+    <form action="<?= $_SERVER['SCRIPT_NAME']?>" method="POST">
+        <div class="select">
+            <select name=sel id="sel">
+                <option>None</option>
+                <?=selectNames($names)?>
+            </select>
+        </div>
+        <br>
+        <input name="start" type="submit" value="Start Chatting">
+        <input class="logout" name="export" type="submit" value="Get your Chat History in a File">
+        <input class="logout" name="mail" type="submit" value="Get your Chat History in your Email">
+    </form>
+    <br>
+    <form action="<?= $_SERVER['SCRIPT_NAME']?>" method="POST">
+        <input name="logout" type="submit" value="Log Out">
+        <input name="delAcc" type="submit" value="Delete My Account And Messages">
+    </form>
+
+</body>
+
+</html>

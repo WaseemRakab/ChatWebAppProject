@@ -1,0 +1,33 @@
+<!--Waseem Rkab And Hisham Mansour-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!--Google Font-->
+</head>
+
+<body>
+    <h1>
+        Register Account
+    </h1>
+    <form action="Register.php" method="POST">
+        <label>First Name:</label> <input type="text" name="fname" required maxlength="20">
+        <label>Last Name:</label> <input type="text" name="lname" required maxlength="20">
+        <label>Username:</label> <input type="text" name="name" required>
+        <label>Email:</label> <input type="email" name="email" required>
+        <label>Password:</label> <input type="password" name="pword" required>
+        <label>Confirm Password:</label> <input type="password" name="confirm" required>
+        <input type="submit" value="Register">
+    </form>
+    <form action="SignIn.php">
+        <input type="submit" value="Return to Sign Page">
+    </form>
+</body>
+
+</html>
