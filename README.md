@@ -1,6 +1,5 @@
-# ChatWebAppProject
-ChatWebApp In PHP/SQL + Apache Server
-
-Chat Web App PHP , Database->MySQL
-Account/Login Management
-Chat User to User.
+# Chat Web App Project
+>Chat Web App PHP.
+>using PHP - MySQL - Apache Server.
+>Basic Login / SignUp System.
+Chat User To User Messenger.
